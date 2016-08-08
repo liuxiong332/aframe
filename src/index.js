@@ -15,9 +15,6 @@ window.WebVRConfig = window.WebVRConfig || {
 require('webvr-polyfill');
 
 require('present'); // Polyfill `performance.now()`.
-// CSS.
-require('./style/aframe.css');
-require('./style/rStats.css');
 
 // Required before `AEntity` so that all components are registered.
 var AScene = require('./core/scene/a-scene');
@@ -53,9 +50,9 @@ require('./extras/components/');
 require('./extras/declarative-events/');
 require('./extras/primitives/');
 
-console.log('A-Frame Version:', pkg.version);
-console.log('three Version:', pkg.dependencies['three']);
-console.log('WebVR Polyfill Version:', pkg.dependencies['webvr-polyfill']);
+// console.log('A-Frame Version:', pkg.version);
+// console.log('three Version:', pkg.dependencies['three']);
+// console.log('WebVR Polyfill Version:', pkg.dependencies['webvr-polyfill']);
 
 module.exports = window.AFRAME = {
   AEntity: AEntity,
